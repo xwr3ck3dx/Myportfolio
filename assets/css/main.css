@@ -4,15 +4,15 @@
 
 body{
     font-family: 'Raleway', sans-serif;
-    height:100vh;
+    /* height:100vh; */
     background : #333 url('../img/wall.jpg') no-repeat center center / cover;
     color: #e7e4e4;
-    overflow: hidden;
+    /* overflow: ; */
     margin:0;
 }
 .main-wrapper{
     background: rgba(0, 0, 0, 0.233);
-    height: 100%;
+    /* height: 100%; */
     z-index: 2;
 }
 .head-wrapper{
@@ -70,7 +70,7 @@ h2.name{
 .menubar .navbar{
     text-align:center;
     display: block;
-    
+    background: #7e7d7d17;
 }
 .menubar ul{
     list-style: none;
@@ -95,7 +95,7 @@ h2.name{
 
 
 #about{
-    padding: 0 3rem 6rem;
+    padding: 0 3rem;
 }
 h2.body-title{
     font-size:2rem;
@@ -118,7 +118,7 @@ h2.body-title{
 
 .body-text{
     font-size: 1.2rem;
-    padding: 2rem 3rem;
+    padding: 0rem 3rem 6rem;
     color:white;
     text-align: justify;
     text-align:center;
