@@ -3,8 +3,8 @@
     "number": {
       "value": 289,
       "density": {
-        "enable": false,
-        "value_area": 789.1476416322727
+        "enable": true,
+        "value_area": 4655.971085630409
       }
     },
     "color": {
@@ -68,7 +68,7 @@
     }
   },
   "interactivity": {
-    "detect_on": "window",
+    "detect_on": "canvas",
     "events": {
       "onhover": {
         "enable": true,
