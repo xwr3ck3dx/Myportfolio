@@ -4,15 +4,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="/assets/js/particles.js"></script>           
 </head>
 <body>
-    <div class="container">
-        <h1>I am a 
-            <span class="text" data-wait = 2000 data-words='["Developer", "Designer", "Teacher", "Tech Enthusiast"]'></span>
-        </h1>
-        <h2>Welcome to My Portfolio.</h2>
+    <div id="particles-js"></div>
+    <div class="main-wrapper">
+        <div class="head-wrapper">
+            <h1 class="head">I am a 
+                <span class="text" data-wait = 2000 data-words='["Developer", "Designer", "Teacher", "Tech Enthusiast"]'></span>
+            </h1>
+            <h2 class="head">Welcome to My Portfolio.</h2>
+        </div>
+        <script src="assets/js/main.js"></script>
+        <div class="main-content container">
+            <div class="img-wrapper">
+                <img src="assets/img/me.jpg" class="profile-img" alt="">
+            </div>
+            
+            <div class="menubar nav-content">
+                <ul class="navbar tabs tabs-transparent">
+                    <!-- <li class="list-item"><a href="">Home</a></li> -->
+                    <li class="tab"><a href="#works"> My Works</a></li>
+                    <li class="tab"><a class="active" href="#about">About Me</a></li>
+                    
+                    <li class="tab"><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+
+
+            <!-- About Div -->
+            <div class="col s12" id="about">
+                <h2 class="body-title">About Me</h1>
+                <p class="body-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde voluptatibus explicabo voluptas dicta at? Distinctio saepe eum blanditiis corporis expedita quasi autem, praesentium sequi perspiciatis dicta obcaecati possimus repellendus recusandae vel dolore, vero officiis. Omnis libero in iure, quam odio accusamus corporis commodi exercitationem accusantium, nam, adipisci maxime ea! Magni beatae consequatur ea voluptas tempora enim, sint corrupti ex expedita ad officia quia ullam recusandae, veritatis repellat neque possimus in quae ipsam exercitationem. Incidunt excepturi dolores vel dignissimos quo sapiente.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde voluptatibus explicabo voluptas dicta at? Distinctio saepe eum blanditiis corporis expedita quasi autem, praesentium sequi perspiciatis dicta obcaecati possimus repellendus recusandae vel dolore, vero officiis. Omnis libero in iure, quam odio accusamus corporis commodi exercitationem accusantium, nam, adipisci maxime ea! Magni beatae consequatur ea voluptas tempora enim, sint corrupti ex expedita ad officia quia ullam recusandae, veritatis repellat neque possimus in quae ipsam exercitationem. Incidunt excepturi dolores vel dignissimos quo sapiente.
+                </p>
+
+            </div>
+
+
+            <!-- Works Div -->
+            <div class="col s12" id="works">
+                <h2 class="body-title">My Works</h1>
+                    
+        
+            </div>
+            <div class="col s12" id="contact">
+                    <h2 class="body-title">Contact Me</h1>
+            </div>
+                
+          
+            
+        </div>
     </div>
-    <script src="assets/js/main.js"></script>
+
+    <script>
+                $(document).ready(function(){
+                     $('.tabs').tabs();
+                });
+                particlesJS.load('particles-js', 'assets/particlesjs-config.json', function() {
+                    console.log('callback - particles.js config loaded');
+                });
+    </script>
 </body>
 </html>

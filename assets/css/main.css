@@ -6,17 +6,24 @@ body{
     font-family: 'Raleway', sans-serif;
     height:100vh;
     background : #333 url('../img/wall.jpg') no-repeat center center / cover;
-    color: #cccccc;
+    color: #e7e4e4;
     overflow: hidden;
     margin:0;
 }
-.container{
+.main-wrapper{
+    background: rgba(0, 0, 0, 0.233);
+    height: 100%;
+    z-index: 2;
+}
+.head-wrapper{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    height:100%;
-    padding: 0 3rem;
-    background: rgba(0, 0, 0, 0.548)
+    /* height:100%; */
+    padding: 3rem 3rem 8rem;
+    
+    text-align: center;
+    
 }
 
 h1, h2{
@@ -24,13 +31,92 @@ h1, h2{
     margin:0.4rem;
 }
 
-h1{
+h1.head{
     font-size:5rem;
 }
-h2{
-    font-size:2.5rem;
+h2.head{
+    font-size:2rem;
 }
 .txt{
     border-right: .02rem solid #aaa;
     padding-right:.2rem;
+}
+
+.main-content{
+    /* background: rgba(238, 238, 238, 0.301); */
+    background: rgba(26, 25, 25, 0.76);
+}
+.img-wrapper{
+    text-align: center;
+}
+.profile-img{
+    height:12rem;
+    border-radius:50%;
+    margin-top:-6rem;
+    box-shadow: 0 0 10px 2px white;
+}
+
+.menubar .navbar{
+    text-align:center;
+    display: block;
+    margin-top:1rem;
+}
+.menubar ul{
+    list-style: none;
+    
+}
+.menubar ul li{
+    display: inline-block;
+    padding: 0 1rem;
+}
+.menubar ul li a{
+    font-size: 1.2rem!important;
+    color:#fff
+}
+.menubar ul li a:hover{
+    /* text-decoration: underline; */
+    text-shadow: 0 0 20px rgba(0, 0, 255, 0.308);
+    
+}
+.menubar ul li a:focus{
+    background:transparent!important;
+}
+
+
+#about{
+    padding: 0 3rem 6rem;
+}
+h2.body-title{
+    font-size:2rem;
+    font-weight: 400;
+    text-align: center;
+    color:white;
+    line-height: 5rem;
+    position: relative;
+}
+.body-title:after {
+    content:""; 
+    background: white; 
+    border-radius:20px;
+    position: absolute; 
+    bottom:0;
+    left:45.8%;
+    height: 7px; 
+    width: 8%;
+  }
+
+.body-text{
+    font-size: 1.2rem;
+    padding: 2rem 3rem;
+    color:white;
+    text-align: justify;
+    text-align:center;
+    text-shadow: 0 0 15px black;
+}
+
+#particles-js canvas{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
 }
