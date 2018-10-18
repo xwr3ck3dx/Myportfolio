@@ -25,12 +25,41 @@ h1, h2{
 }
 
 h1{
-    font-size:5rem;
+    font-size:3rem;
+}
+.name{
+    font-size:2.5rem;
+}
+.name span{
+    font-size:3.5rem;
 }
 h2{
-    font-size:2.5rem;
+    font-size:1.5rem;
 }
 .txt{
     border-right: .02rem solid #aaa;
     padding-right:.2rem;
+}
+
+
+@media(max-width: 720px){
+    h1{
+        font-size:2rem;
+    }
+    .name{
+        font-size:1.5rem;
+    }
+    .name span{
+        font-size:2rem;
+    }
+    h2{
+        font-size:1rem;
+    }
+    .text{
+        font-size:1.2rem;
+        font-weight: 400;
+    }
+    .textclass{
+        height:3rem;
+    }
 }
