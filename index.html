@@ -11,7 +11,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="/assets/js/particles.js"></script>           
+    <script src="/assets/js/particles.js"></script>     
+    <script src="assets/js/main.js"></script>
+
 </head>
 <body>
     <div id="particles-js"></div>
@@ -22,7 +24,6 @@
             </h1>
             <h2 class="head">Welcome to My Portfolio.</h2>
         </div>
-        <script src="assets/js/main.js"></script>
         <div class="main-content container">
             <div class="img-wrapper">
                 <img src="assets/img/me.jpg" class="profile-img" alt="">
@@ -41,26 +42,31 @@
 
             <!-- About Div -->
             <div class="col s12" id="about">
-                <h2 class="body-title">About Me</h1>
-                <p class="body-text">
+                <h2 class="body-title">About Me</h2>
+                <div class="body-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde voluptatibus explicabo voluptas dicta at? Distinctio saepe eum blanditiis corporis expedita quasi autem, praesentium sequi perspiciatis dicta obcaecati possimus repellendus recusandae vel dolore, vero officiis. Omnis libero in iure, quam odio accusamus corporis commodi exercitationem accusantium, nam, adipisci maxime ea! Magni beatae consequatur ea voluptas tempora enim, sint corrupti ex expedita ad officia quia ullam recusandae, veritatis repellat neque possimus in quae ipsam exercitationem. Incidunt excepturi dolores vel dignissimos quo sapiente.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde voluptatibus explicabo voluptas dicta at? Distinctio saepe eum blanditiis corporis expedita quasi autem, praesentium sequi perspiciatis dicta obcaecati possimus repellendus recusandae vel dolore, vero officiis. Omnis libero in iure, quam odio accusamus corporis commodi exercitationem accusantium, nam, adipisci maxime ea! Magni beatae consequatur ea voluptas tempora enim, sint corrupti ex expedita ad officia quia ullam recusandae, veritatis repellat neque possimus in quae ipsam exercitationem. Incidunt excepturi dolores vel dignissimos quo sapiente.
-                </p>
+                </div>
 
             </div>
 
 
             <!-- Works Div -->
             <div class="col s12" id="works">
-                <h2 class="body-title">My Works</h1>
-                    
+                <h2 class="body-title">My Works</h2>
+                    <div class="body-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde voluptatibus explicabo voluptas dicta at? Distinctio saepe eum blanditiis corporis expedita quasi autem, praesentium sequi perspiciatis dicta obcaecati possimus repellendus recusandae vel dolore, vero officiis. Omnis libero in iure, quam odio accusamus corporis commodi exercitationem accusantium, nam, adipisci maxime ea! Magni beatae consequatur ea voluptas tempora enim, sint corrupti ex expedita ad officia quia ullam recusandae, veritatis repellat neque possimus in quae ipsam exercitationem. Incidunt excepturi dolores vel dignissimos quo sapiente.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde voluptatibus explicabo voluptas dicta at? Distinctio saepe eum blanditiis corporis expedita quasi autem, praesentium sequi perspiciatis dicta obcaecati possimus repellendus recusandae vel dolore, vero officiis. Omnis libero in iure, quam odio accusamus corporis commodi exercitationem accusantium, nam, adipisci maxime ea! Magni beatae consequatur ea voluptas tempora enim, sint corrupti ex expedita ad officia quia ullam recusandae, veritatis repellat neque possimus in quae ipsam exercitationem. Incidunt excepturi dolores vel dignissimos quo sapiente.
+                </div>
         
             </div>
             <div class="col s12" id="contact">
-                    <h2 class="body-title">Contact Me</h1>
+                <h2 class="body-title">Contact Me</h2>
             </div>
                 
           
             
+        </div>
+        <div class="footer">
+            <span>Copyrighted to Samundra Raj Bajracharya, 2018 &copy;</span>
         </div>
     </div>
 
@@ -69,13 +75,30 @@
                      $('.tabs').tabs();
                      var docHeight=$(document).height();
                      $('.main-wrapper').css('height',docHeight);
+                      
                      if($(document).width()>= 1024){
                         particlesJS.load('particles-js', 'assets/particlesjs-config.json', function() {
                             console.log('callback - particles.js config loaded');
                         });
                      }
+                     $('.main-content').css('min-height',docHeight-($('.head-wrapper').outerHeight()+$('.footer').height()));
                 });
-               
+                var request = new XMLHttpRequest();
+
+                request.open('GET', 'http://rome.viewen.com/~samundra/api/post/read.php', true);
+                request.onload = function () {
+
+                // Begin accessing JSON data here
+                var data = JSON.parse(this.response);
+
+                if (request.status >= 200 && request.status < 400) {
+                    console.log(data);
+                } else {
+                    console.log('error');
+                }
+                }
+
+                request.send();
     </script>
 </body>
 </html>
