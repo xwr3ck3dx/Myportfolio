@@ -47,6 +47,7 @@ h2.head{
 .main-content{
     /* background: rgba(238, 238, 238, 0.301); */
     background: rgba(26, 25, 25, 0.76);
+    position: relative;
 }
 .img-wrapper{
     text-align: center;
@@ -138,4 +139,35 @@ h2.body-title{
     text-align: center;
     font-weight: 600;
     border-top:1px solid white
+}
+
+.download-btn{
+    text-align: center;
+    margin-top:1rem;
+}
+.download-btn a{
+    background-color:rgb(91, 179, 91)
+}
+.download-btn a:hover{
+    background-color:rgb(2, 105, 2)
+
+}
+
+.blog-btn{
+    position: absolute;
+    right:1rem;
+    top:1rem;
+}
+#works h4{
+    font-size:1.5rem;
+    text-align:left;
+}
+#works img{
+    box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.712);
+    border:1px solid rgba(0, 0, 0, 0.432);
+}
+
+.row{
+    margin:0;
+    padding: 20px 0;
 }
