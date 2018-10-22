@@ -171,3 +171,50 @@ h2.body-title{
     margin:0;
     padding: 20px 0;
 }
+
+@media(max-width: 720px){
+    h1{
+        font-size:2rem;
+    }
+    .name{
+        font-size:1.5rem;
+    }
+    .name span{
+        font-size:2rem;
+    }
+    h2{
+        font-size:1rem;
+    }
+    .text{
+        font-size:1.2rem;
+        font-weight: 400;
+    }
+    .textclass{
+        height:3rem;
+    }
+    .main-content{
+        margin:0;
+        width: 100%;
+    }
+    .blog-btn{
+        position: absolute;
+        right:0;
+        top:.5rem;
+    }
+    #about .body-text{
+        font-size:1.2rem;
+        padding:0;
+        width:100%;
+        text-align: justify
+    }
+    #about{
+        padding:1.5rem;
+    }
+    .col.l4.s12{
+        margin-bottom:1rem;
+
+    }
+    .row{
+        padding-bottom:0
+    }
+}
