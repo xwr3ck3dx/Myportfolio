@@ -178,6 +178,7 @@ h2.body-title{
     }
     .name{
         font-size:1.5rem;
+        padding: 0 1rem !important;
     }
     .name span{
         font-size:2rem;
@@ -208,7 +209,7 @@ h2.body-title{
         text-align: justify
     }
     #about{
-        padding:1.5rem;
+        padding: 0 1.5rem;
     }
     .col.l4.s12{
         margin-bottom:1rem;
@@ -216,5 +217,11 @@ h2.body-title{
     }
     .row{
         padding-bottom:0
+    }
+    .profile-img{
+        transform: scale(0.8);
+    }
+    .name{
+      
     }
 }
