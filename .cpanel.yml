@@ -4,4 +4,4 @@ deployment:
  - export DEPLOYPATH=/home/samundra/public_html/
  - export DEPLOYPATH2=/home/samundra/public_html/assets/css
  - /bin/cp index.html $DEPLOYPATH
- - /bin/cp /assets/css/main.css $DEPLOYPATH2
+ - /bin/cp assets/css/main.css $DEPLOYPATH2
