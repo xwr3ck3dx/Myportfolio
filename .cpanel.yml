@@ -2,6 +2,6 @@
 deployment:
  tasks:
  - export DEPLOYPATH=/home/samundra/public_html/
- - export DEPLOYPATH2=/home/samundra/public_html/assets/css
+ - export DEPLOYPATH2=/home/samundra/public_html/assets/
  - /bin/cp index.html $DEPLOYPATH
- - /bin/cp assets/css/main.css $DEPLOYPATH2
+ - /bin/cp assets/ $DEPLOYPATH2
