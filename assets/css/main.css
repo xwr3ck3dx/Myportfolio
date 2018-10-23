@@ -144,6 +144,7 @@ h2.body-title{
 .download-btn{
     text-align: center;
     margin-top:1rem;
+    padding-bottom:1rem;
 }
 .download-btn a{
     background-color:rgb(91, 179, 91)
@@ -190,6 +191,9 @@ h2.body-title{
         font-size:1.2rem;
         font-weight: 400;
     }
+    .head-wrapper{
+        padding:2rem 2rem 6rem;
+    }
     .textclass{
         height:3rem;
     }
@@ -203,7 +207,7 @@ h2.body-title{
         top:.5rem;
     }
     #about .body-text{
-        font-size:1.2rem;
+        font-size:1rem;
         padding:0;
         width:100%;
         text-align: justify
@@ -221,7 +225,10 @@ h2.body-title{
     .profile-img{
         transform: scale(0.8);
     }
-    .name{
-      
+    .tabs .tab a{
+        font-size: 1rem!important;
+    }
+    .body-title{
+        font-size:1.5rem!important;
     }
 }
