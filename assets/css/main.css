@@ -6,8 +6,9 @@ body{
     font-family: 'Raleway', sans-serif;
     /* height:100vh; */
     background : #333 url('../img/wall.jpg') no-repeat center center / cover;
+    background-attachment: fixed;
     color: #e7e4e4;
-    /* overflow: ; */
+ 
     margin:0;
 }
 .main-wrapper{
@@ -20,7 +21,7 @@ body{
     flex-direction: column;
     justify-content: center;
     /* height:100%; */
-    padding: 3rem 3rem 8rem;
+    padding: 3rem 3rem 6rem;
     
     text-align: center;
     
