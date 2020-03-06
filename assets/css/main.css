@@ -60,7 +60,7 @@ h2.head{
     box-shadow: 0 0 10px 2px white;
 }
 
-h2.name{
+h1.name{
     text-align: center;
     font-size: 2rem;
     font-weight:400;
